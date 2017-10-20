@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Earth Diver Test</title>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-default fixed-top">
+      <div class="top-nav container">
+        <div class="logo"><i class="fa fa-camera-retro fa-3x"></i><p>Logo for design</p></div>
+         <p class="title">Earth Diver Test</p>
+         <div class="list">
+          <button  id="menubtn" class="btn btn-primary hide" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="fuckingwork" onClick=findingOut()>Click</button>
+          <div class="collapse show" id="work" >
+             <ul style="list-style:none;">
+              <li class="list"><a href="http://www.theuselessweb.com/">Random Link</a></li>
+              <li class="list"><a href="http://www.theuselessweb.com/">Random Link 2</a></li>
+              <li class="list"><a href="http://www.theuselessweb.com/">Random Link 3</a></li>
+              <li class="list"><a href="http://www.theuselessweb.com/">Random Link 4</a></li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="top containter"></div>
+    <div class="main container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, lorem eu aliquet vestibulum, quam nisi condimentum dui, sed ultricies felis massa at neque. Phasellus ornare leo ut turpis sodales aliquet. Suspendisse potenti. Phasellus sit amet nibh quam. Proin iaculis nibh tempus gravida viverra. Morbi rutrum dui a dui tristique ullamcorper. Pellentesque vel dapibus lorem, non iaculis turpis. Morbi sit amet justo vel leo faucibus imperdiet in a sem. Ut eget luctus lacus. Integer porttitor eros sit amet eleifend ultricies. Donec massa lectus, tempus quis ipsum in, placerat vestibulum diam. Nulla porta neque in tortor mollis, ut tempor sapien aliquam. Donec vestibulum dolor vel dictum mollis.</p>
+
+      <p>Suspendisse in diam non justo egestas rutrum. Pellentesque consequat varius pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi dapibus nisl et ultrices consectetur. Vivamus varius luctus magna, vel laoreet elit tempus in. Aenean in ante ex. Sed sed bibendum lectus. Suspendisse mollis felis et tincidunt accumsan. Integer sodales nunc sit amet iaculis elementum. Aliquam aliquet ultrices facilisis. Maecenas enim est, hendrerit sit amet consequat quis, cursus eu justo.</p>
+
+      <p>Fusce consequat magna ac imperdiet laoreet. Proin suscipit, tellus vel tempor consectetur, enim massa molestie mi, sit amet aliquet nisi dui eu enim. Maecenas et neque erat. Sed ante lectus, posuere ut ligula sollicitudin, dapibus scelerisque augue. Donec dictum nisi neque, eget semper diam placerat a. In hac habitasse platea dictumst. Quisque non dui nec metus egestas varius id ut tellus. Phasellus cursus magna eget lorem posuere ultrices. Integer faucibus tellus id faucibus egestas. Curabitur nec consectetur orci. Curabitur blandit mi id tincidunt cursus. Maecenas est enim, imperdiet facilisis blandit et, molestie ut nunc. Suspendisse interdum hendrerit ligula, non eleifend ante. Nullam venenatis nunc nec molestie porta. Vestibulum eget turpis vel quam aliquam tristique.</p>
+
+      <p>Nulla eros ante, sodales nec lorem et, viverra volutpat libero. Proin orci lorem, ultrices in porta nec, ornare eu arcu. Curabitur neque ante, aliquet et auctor blandit, blandit sit amet leo. Morbi et lorem tempor est congue posuere vel sed lectus. Nulla nec ultricies mauris. Pellentesque euismod aliquam ipsum. Pellentesque tortor velit, mollis vel iaculis et, hendrerit sed nisl. Aenean eget fringilla massa. Nam ut mi orci. Praesent sed est ut quam luctus placerat a at urna. Donec arcu diam, euismod eget interdum efficitur, volutpat id metus. Suspendisse feugiat ante non semper pretium.</p>
+
+      <p>Aliquam dictum dui sollicitudin lorem dictum, eu imperdiet ex laoreet. Vestibulum ullamcorper erat enim. Donec tempor ut dolor et placerat. Integer aliquam nibh erat, ac ullamcorper erat elementum eget. Aenean dapibus placerat magna pretium condimentum. Quisque ut urna nec nulla hendrerit placerat. Maecenas non tristique dolor, eget tempus dolor. Ut aliquet nisi sed mauris sollicitudin fringilla.</p>
+
+      <p>Donec imperdiet nunc ut augue rhoncus congue. Ut et enim at eros tincidunt scelerisque quis eleifend mi. Aenean commodo sem eget ligula porta venenatis. Nulla scelerisque convallis sapien id volutpat. Duis a lorem pellentesque, ullamcorper metus vitae, fermentum mauris. Vivamus non viverra metus. Praesent faucibus dui eget leo rutrum maximus. Nam mattis mi vel dictum porta. Curabitur sagittis sagittis leo ac ornare. Fusce nibh felis, feugiat at ornare sed, fermentum id urna. Donec consectetur lorem ut dolor semper, ac ultrices elit fringilla. Maecenas nulla est, scelerisque eget lacinia a, dictum in magna. Vivamus hendrerit bibendum magna eget lobortis. Vestibulum porttitor auctor arcu at imperdiet.</p>
+    </div>
+    <div>
+    <footer class= "container-fluid"><h4>This be a footer arrgh!</h4></footer>
+    </div>
+  </body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://use.fontawesome.com/c225a676a0.js"></script>
+  <script>
+  const nav = document.querySelector('#navbar');
+let topOfNav = nav.offsetTop;
+
+function fixedNav() {
+  var element = document.getElementById('work');
+  var btnToggle = document.getElementById('menubtn');
+
+  if (window.scrollY > 0) {
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+    document.body.classList.add('resize');
+    element.classList.remove('show');
+    btnToggle.classList.remove('hide');
+  } else {
+    document.body.classList.remove('resize');
+    document.body.style.paddingTop = 0;
+    element.classList.add('show');
+    btnToggle.classList.add('hide');
+  }
+}
+function findingOut() {
+  var element = document.getElementById('work');
+  console.log(element);
+  element.classList.toggle('show');
+}
+
+window.addEventListener('scroll', fixedNav);
+</script>
+</html>
